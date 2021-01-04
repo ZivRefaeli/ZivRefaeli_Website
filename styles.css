@@ -1,0 +1,119 @@
+html{
+    user-select: none;
+    direction: rtl;
+}
+
+#board{
+    position: fixed;
+    background-image: url("images/board.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#title{
+    color:red;
+    text-shadow: 2px 2px 2px gray;
+    font-size: 310%;
+    text-align: center;
+    margin: 6px;
+}
+
+#cube_div{
+    text-align: center;
+    position: fixed;
+    background-color: rgb(245, 236, 188);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#cube_title{
+    font-size: 180%;
+    font-family: 'Aharoni';
+}
+
+#cube{
+    margin: 10px;
+    transform: rotateZ(90deg);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.player{
+    position: relative;
+    top: 0px;
+    right: 0px;
+    width: 2.6%;
+    height: 7.15%;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
+#startGame{
+    background-color: rgb(102, 216, 121);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: fit-content;
+    text-align: center;
+    position: fixed;
+}
+
+#gameObjs{
+    display: none;
+}
+
+#status_bar{
+    width: fit-content;
+    background-color: rgb(160, 214, 216);
+    text-align: center;
+    position: fixed;
+    font-family: 'Aharoni';
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.answer{
+    background-color: pink;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 1px 1px 3px gainsboro;
+}
+
+#qus{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px gainsboro;
+    font-family: 'Calibri';
+}
+
+#qustions{
+    display: none;
+    width: fit-content;
+    position: fixed;
+    background-color: darkslategrey;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px black;
+    border: 1px dashed whitesmoke;
+}
+
+#answers{
+    margin: auto;
+}
+
+#creator{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-family: 'Aharoni';
+    font-size: 20px;
+    width: fit-content;
+    text-align: center;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px gray;
+    padding: 10px;
+    background-color: rgb(237, 251, 236);
+}

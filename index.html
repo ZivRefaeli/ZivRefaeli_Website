@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>סולמות ונחשים</title>
+    <link rel="icon" href="images/board.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="title">סולמות ונחשים</h1>
+    <div id="startGame">
+        <h2>ברוכים הבאים למשחק</h2>
+        <h1>סולמות ונחשים</h1>
+        <table>
+            <tr>
+                <th>כמה משתתפים במשחק: </th>
+                <td>
+                    <select id="players">
+                        <option>2 שחקנים</option>
+                        <option>3 שחקנים</option>
+                        <option>4 שחקנים</option>
+                    </select>
+                </td>
+            </tr>
+        </table><br />
+        <button onclick="main()">התחל לשחק</button>
+    </div>
+    <div id="gameObjs">
+        <div id="board"><!-- Players --></div>
+        <div id="cube_div">
+            <b id="cube_title">הטילו את הקוביה</b><br />
+            <img id="cube" src="images/cube-6.png" alt="הקוביה" width="26%" ><br />
+            <button onclick="generateCube()">הטל קוביה</button>
+        </div>
+        <div id="status_bar">
+            <h1 style="font-size: 180%; text-decoration: underline;">טבלת מיקום השחקנים:</h1>
+            <table id="positions" style="margin-right: auto; margin-left: auto;"></table>
+        </div>
+        <div id="qustions">
+            <h1 id="qus">השאלה:</h1>
+            <table id="answers">
+                <tr>
+                    <th id="ans1" class="answer">תשובה 1</th>
+                    <th id="ans2" class="answer">תשובה 2</th>
+                </tr>
+                <tr>
+                    <th id="ans3" class="answer">תשובה 3</th>
+                    <th id="ans4" class="answer">תשובה 4</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="creator">
+        <u>יוצר המשחק</u>: זיו רפאלי<br />
+        יא' 5 2020
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
