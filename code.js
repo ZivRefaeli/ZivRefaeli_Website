@@ -131,7 +131,7 @@ const generateCube = () => {
             count += 1;
             angle += 30;
             
-            cube.src = `images/cube-${n}.png`;
+            cube.src = `cube-${n}.png`;
             cube.style.transform = `rotateZ(${angle}deg)`;
             
             if(count == 12){
@@ -264,7 +264,7 @@ function main(){
     
     setCss(false);
     for(let i = 0; i < playersCount; i++)
-        board.innerHTML += `<img id='player${i}' src='images/Player-${i}.png' class='player' />`;
+        board.innerHTML += `<img id='player${i}' src='Player-${i}.png' class='player' />`;
     
     for(let k = 0; k < playersCount; k++){
         players.push(new Player(k));
