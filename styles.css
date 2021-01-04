@@ -5,7 +5,7 @@ html{
 
 #board{
     position: fixed;
-    background-image: url("images/board.jpg");
+    background-image: url("board.jpg");
     background-size: contain;
     background-repeat: no-repeat;
 }
